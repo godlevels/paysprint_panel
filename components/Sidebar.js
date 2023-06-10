@@ -9,10 +9,10 @@ import { RxDashboard } from 'react-icons/rx'
 import Set from '../public/img/sidebar/set.svg'
 import Log from '../public/img/sidebar/log-out.svg'
 
-const Sidebar = ({children}) => {
+const Sidebar = ({ children }) => {
   return (
     <div className='flex'>
-      <div className='fixed w-[280px] h-screen px-4 bg-white border-r-[1px] flex flex-col'>
+      <div className='fixed w-[200px] h-screen px-4 bg-white border-r-[1px] flex flex-col'>
           <div className="flex justify-center items-center mb-10 py-6 border-b-[1px]">
             <Link href='/'>
               <Image src={Logo} alt="" />
@@ -62,7 +62,7 @@ const Sidebar = ({children}) => {
             </div>
           </div>
       </div>
-      <main className='ml-[280px] w-full'>{children}</main>
+      <main className='ml-[200px] w-full'>{children}</main>
     </div>
   )
 }
